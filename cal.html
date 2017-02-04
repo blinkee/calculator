@@ -1,0 +1,73 @@
+<html>
+<head>
+<style type="text/css">
+	#p1{letter-spacing: 3px;
+		bottom: 3px;
+		padding :20px;
+		border:6px solid grey; 
+		height:280px;
+		width: 230px;
+		background-color:green;
+       }
+       .tx
+       {
+       	text-align: right;
+       	border:5px solid black;
+       	width:220px;
+       	height:50px;
+       }
+       .bo{
+       	height:50px;
+       	width:50px;
+       }
+ .bo:hover{
+ 	background-color: white;
+     color: blue;
+ }
+	.b{
+	height:50px;
+       	width:50px;	
+	}
+	.b:hover{
+		background-color:white;
+		color:blue; 
+	}
+</style>
+<script type="text/javascript">
+	function mycal(nom)
+	{
+		calul.txt1.value=calul.txt1.value+nom;
+     
+	}
+	
+	
+	</script>
+</head>
+<body>
+<div id="p1" name=p>
+<form name=calul id="fo1">
+	<input type=text name="txt1" id="t1" class="tx"><br>
+    <input type=reset name=cls value=CE  class="b" >
+    <input type=button name=mod value="%" class="bo" onclick="mycal(mod.value)">
+    <input type=button name=brack1 value=(  class="bo" onclick="mycal(brack1.value)">
+    <input type=button name=brack2 value=) class="bo" onclick="mycal(brack2.value)"><br>
+	<input type=button name="btn9" value=9  class="bo" onclick="mycal(btn9.value)">
+	<input type="button" name="bt8" value="8" class="bo" onclick="mycal(bt8.value)">
+	<input type="button" name="bt7" value="7" class="bo"onclick=" mycal(bt7.value)">
+	<input type="button" name="add" value="+" class="bo" onclick="mycal(add.value)"><br>
+	<input type="button" name="bt6" value="6" class="bo" onclick="mycal(bt6.value)">
+	<input type="button" name="bt5" value="5" class="bo" onclick="mycal(bt5.value)">
+	<input type="button" name="bt4" value="4" class="bo" onclick="mycal(bt4.value)">
+	<input type="button" name="mult" value="*" class="bo" onclick="mycal(mult.value)"><br>
+	<input type="button" name="bt3" value="3" class="bo" onclick="mycal(bt3.value)">
+	<input type="button" name="bt2" value="2" class="bo" onclick="mycal(bt2.value)">
+	<input type="button" name="bt1" value="1" class="bo" onclick="mycal(bt1.value)">
+	<input type="button" name="sub" value="-" class="bo" onclick="mycal(sub.value)"><br>
+	<input type="button" name="bt0" value="0" class="bo" onclick="mycal(bt0.value)">
+	<input type="button" name="dod" value="." class="bo" onclick="mycal(dod.value)">
+	<input type="button" name="equal" value="=" class="bo" onclick="txt1.value=eval(txt1.value)">
+	<input type="button" name="divide" value="/" class="bo" onclick="mycal(divide.value)">
+	</div>
+</form>
+</body>
+</html>
